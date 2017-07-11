@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
+title: آوا ویانا آرتا
+url: "https://avaviana.com"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -18,7 +18,6 @@ author:
 social:
   name: Frisco Template
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
 
 # -----
 # Build
