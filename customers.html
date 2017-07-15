@@ -1,7 +1,41 @@
 ---
 title: همراهان ما
 description: برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.
-image: https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png
+image: /images/handshake-1.jpg
+customers:
+  - name: اد پورتال
+    logo: /images/customers/adportal.png
+    link: http://adportal.ir/
+  - name: آشپزباشی
+    logo: /images/customers/ashpazbashy.jpg
+    link: https://ashpazbashy.com/
+  - name: انجمن اوتیسم ایران
+    logo: /images/customers/irautism.png
+    link: http://www.irautism.org/
+  - name: دیجی کالا مگ
+    logo: /images/customers/digikalamag.jpg
+    link: https://www.digikala.com/mag/
+  - name: گلدایران آکادمی
+    logo: /images/customers/goldiran_academy.jpg
+    link: #
+  - name: موبیرو
+    logo: /images/customers/mobiro.png
+    link: http://mobiro.ir/
+  - name: پرگار
+    logo: /images/customers/pargar.jpg
+    link: http://pargar.ir/
+  - name: پیام گو
+    logo: /images/customers/pgae.png
+    link: http://www.pgae.ir/
+  - name: خانه ای بی
+    logo: /images/customers/eb-home.jpg
+    link: http://eb-home.ir/
+  - name: فناوری اطلاعات توسعه سامان
+    logo: /images/customers/ts.jpg
+    link: https://ts.co.ir/
+  - name: ویدانما
+    logo: /images/customers/vidanama.jpg
+    link: https://www.vidanama.com/
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -9,18 +43,11 @@ image: https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png
 		<div class="hero-text-container">
 			<h2 class="editable">همراهان ما</h2>
 			<p class="subtext editable">برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.</p>
-		</div>
-	</div>
-</section>
-
-<div class="content">
-	<section class="info" id="learn-more">
-		<div class="container flex">
-			<div class="text">
-				<h2 class="editable">اگر فعالیت شما در حوزه ارزش افزوده (vas) است</h2>
-			<p class="subtext editable">شرکت آوا ویانا آرتا، با توجه به تجربه بالایی که در حوزه دوبله ویدیو برای شرکتهای vas دارد و با سابقه دوبله بیش از 6 هزار دقیقه ویدیو در این حوزه، با تمامی چالش ها و نکات مهم و قوانین حاکم بر محتواهای تولیدی این شرکت ها آشنا بوده و به همین دلیل، تضمین می نماید با هزینه ای فوق العاده پایین تمامی مراحل لازم را با کیفیت بالا برای این نوع شرکت ها انجام دهد.
-ارائه خدمات به شرکت های فعال در حوزه ارزش افزوده به صورت پکیج کامل (ترجمه، دوبله، میکس و ... ) خواهد بود و فایلهای آماده استفاده تحویل شرکت ها می شود.</p>
+			<div class="flex">
+			{% for customer in page.customers %}
+				<a href="{{ customer.link }}"><img class="flex" style="max-height: 16rem; padding: 0.6rem;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
+			{% endfor %}
 			</div>
 		</div>
-	</section>
+	</div>
 </section>
