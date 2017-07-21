@@ -4,15 +4,15 @@ left_links:
   - name: تماس با ما
     link: /contact/
 right_links:
-  - name:
+  - name: اینستاگرام
     link: https://www.instagram.com/ava_viana
     social_icon: Instagram
     new_window: true
-  - name:
+  - name: آپارات
     link: http://www.aparat.com/avacompany
-    social_icon: YouTube
+    social_icon: Aparat
     new_window: true
-  - name:
+  - name: تلگرام
     link: https://t.me/avaviana
-    social_icon: Twitter
+    social_icon: Telegram
     new_window: true
