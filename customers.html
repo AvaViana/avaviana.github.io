@@ -40,12 +40,12 @@ customers:
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
-		<div class="hero-text-container">
+		<div class="text-container">
 			<h2 class="editable">همراهان ما</h2>
 			<p class="subtext editable">برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.</p>
-			<div class="flex">
+			<div class="flex" style="flex-wrap: wrap;">
 			{% for customer in page.customers %}
-				<a href="{{ customer.link }}"><img class="flex" style="max-height: 16rem; padding: 0.6rem;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
+				<a href="{{ customer.link }}"><img style="height: 6rem; width: auto; padding: 0.3rem;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
 			{% endfor %}
 			</div>
 		</div>
