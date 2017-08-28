@@ -16,23 +16,20 @@ customers:
     logo: /images/customers/digikala_com_mag.png
     link: https://www.digikala.com/mag/
   - name: گلدایران آکادمی
-    logo: /images/customers/goldiran_academy.png
+    logo: /images/customers/goldiran.png
     link: #
   - name: موبیرو
-    logo: /images/customers/mobiro.png
+    logo: /images/customers/mobiro_ir.png
     link: http://mobiro.ir/
   - name: پرگار
-    logo: /images/customers/pargar.png
+    logo: /images/customers/pargar_ir.png
     link: http://pargar.ir/
   - name: پیام گو
-    logo: /images/customers/pgae.png
+    logo: /images/customers/pgae_ir.png
     link: http://www.pgae.ir/
   - name: خانه ای بی
     logo: /images/customers/eb-home_ir.png
     link: http://eb-home.ir/
-  - name: فناوری اطلاعات توسعه سامان
-    logo: /images/customers/ts.png
-    link: https://ts.co.ir/
   - name: ویدانما
     logo: /images/customers/vidanama.png
     link: https://www.vidanama.com/
@@ -76,7 +73,7 @@ customers:
     logo: /images/customers/vidioto.png
     link: #
   - name: یارا موبایل
-    logo: /images/customers/yaramobile.com.png
+    logo: /images/customers/yaramobile_com.png
     link: http://yaramobile.com
 ---
 
@@ -87,7 +84,7 @@ customers:
 			<p class="subtext editable">برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.</p>
 			<div class="flex" style="flex-wrap: wrap;">
 			{% for customer in page.customers %}
-				<a href="{{ customer.link }}"><img style="height: 6rem; width: auto; padding: 0.3rem;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
+				<a href="{{ customer.link }}"><img style="height: 6rem; width: auto; padding: 0.3rem 0.3rem 0;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
 			{% endfor %}
 			</div>
 		</div>
