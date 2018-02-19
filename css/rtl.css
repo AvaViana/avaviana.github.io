@@ -509,7 +509,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 nav {
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 1em;
   width: 100%;
   position: relative;
   top: -7px;
@@ -608,3 +608,18 @@ footer {
       float: none;
       padding: 16px 0;
       margin: 0; } }
+      
+@media only screen and (max-width: 560px) {
+    p {
+        font-size: 1em;
+    }
+    h1 {
+      font-size: 2.7em;
+      }
+    h2 {
+      font-size: 2.4em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+}
