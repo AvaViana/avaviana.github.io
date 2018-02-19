@@ -6,9 +6,6 @@ customers:
   - name: اد پورتال
     logo: /images/customers/adportal_ir.png
     link: http://adportal.ir/
-  - name: نگین خودرو
-    logo: /images/customers/renault.png
-    link: http://www.neginkhodro.com/
   - name: انجمن اوتیسم ایران
     logo: /images/customers/irautism_org.png
     link: http://www.irautism.org/
@@ -80,10 +77,10 @@ customers:
     link: http://yaramobile.com
 ---
 
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %}); height: auto;">
 	<div class="inner-hero text-container">
 		<div class="text-container">
-			<h2 class="editable">همراهان ما</h2>
+			<h2 class="editable" style="padding-top: 4rem;">همراهان ما</h2>
 			<p class="subtext editable">برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.</p>
 			<div class="flex" style="flex-wrap: wrap;">
 			{% for customer in page.customers %}
