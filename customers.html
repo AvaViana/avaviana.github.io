@@ -24,6 +24,12 @@ customers:
   - name: آوا توسعه فناوری ارتباطات
     logo: /images/customers/ava_tosee.png
     link: http://avatosee.ir/
+  - name: شاپرک
+    logo: /images/customers/shaparak.png
+    link: http://shaparak.tv/
+  - name: فلفل
+    logo: /images/customers/felfel.png
+    link: #
   - name: پیام گو
     logo: /images/customers/pgae_ir.png
     link: http://www.pgae.ir/
@@ -84,7 +90,7 @@ customers:
 			<p class="subtext editable">برخی از شرکت هایی که افتخار همراهی و همکاریشان را داریم.</p>
 			<div class="flex" style="flex-wrap: wrap;">
 			{% for customer in page.customers %}
-				<a href="{{ customer.link }}"><img style="height: 6rem; width: auto; padding: 0.3rem 0.3rem 0;" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
+				<a href="{{ customer.link }}"><img class="customer-logo" src="{{ customer.logo }}" title="{{ customer.name }}" alt="{{ customer.name }}"></a>
 			{% endfor %}
 			</div>
 		</div>
