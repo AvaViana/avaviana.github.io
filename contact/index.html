@@ -7,18 +7,18 @@
 		<meta name="generator" content="Jekyll v3.7.2">
 
 		<!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Not Found | آوا ویانا آرتا</title>
+<title>ارتباط با ما | آوا ویانا آرتا</title>
 <meta name="generator" content="Jekyll v3.7.2" />
-<meta property="og:title" content="Not Found" />
+<meta property="og:title" content="ارتباط با ما" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This page doesn’t exist!" />
-<meta property="og:description" content="This page doesn’t exist!" />
-<link rel="canonical" href="https://avaviana.com/404.html" />
-<meta property="og:url" content="https://avaviana.com/404.html" />
+<meta name="description" content="Send us a message to find out more!" />
+<meta property="og:description" content="Send us a message to find out more!" />
+<link rel="canonical" href="https://avaviana.com/contact/" />
+<meta property="og:url" content="https://avaviana.com/contact/" />
 <meta property="og:site_name" content="آوا ویانا آرتا" />
-<meta property="og:image" content="https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png" />
+<meta property="og:image" content="https://avaviana.com/images/contact.jpg" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://avaviana.com/404.html","headline":"Not Found","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://avaviana.com/siteicon.png"}},"image":"https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png","description":"This page doesn’t exist!","@context":"http://schema.org"}</script>
+{"@type":"WebPage","url":"https://avaviana.com/contact/","headline":"ارتباط با ما","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://avaviana.com/siteicon.png"}},"image":"https://avaviana.com/images/contact.jpg","description":"Send us a message to find out more!","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 		<link type="application/atom+xml" rel="alternate" href="https://avaviana.com/feed.xml" title="آوا ویانا آرتا" />
@@ -79,7 +79,7 @@
 		
 
 		
-		<a href="/contact/" class="" >تماس</a>
+		<a href="/contact/" class=" active" >تماس</a>
 	
 </nav>
 
@@ -87,16 +87,65 @@
 			</div>
 		</header>
 
-		<section class="hero" style="background-image: url(https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png)">
+		<section class="hero" style="background-image: url(/images/contact.jpg)">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1>Not Found</h1>
-			<p class="subtext">This page doesn't exist!</p>
+			<h1 class="editable">ارتباط با ما</h1>
+			<p class="subtext editable"></p>
 		</div>
 	</div>
 </section>
 
+<section class="pad">
+	<div class="text-container contact-box">
+		<div class="contact-details">
+			<h3>استودیو</h3>
+			<address><a target="_blank" href="https://www.google.com/maps/place/35.688286N+51.357269E">تهران، خیابان هاشمی، خیابان بیابانی، کوچه محمدی پلاک 3</a></address>
 
+			<h3>تلفن</h3>
+			<p class="editable"><a href="tel:+982166878819">۰۲۱۶۶۸۷۸۸۱۹</a></p>
+			<h3>ایمیل</h3>
+			<p class="editable"><a href="mailto:info@avaviana.com">info@avaviana.com</a></p>
+			<h3>کانال تلگرام</h3>
+			<p class="editable"><a href="https://t.me/avaviana">@avaviana</a></p>
+			<h3>اینستاگرام</h3>
+			<p class="editable"><a href="https://www.instagram.com/ava_viana">@ava_viana</a></p>
+		</div>
+	</div>
+</section>
+
+<div class="map" id="map"></div>
+
+<script>
+	window.mapData = {"latitude":35.688286,"longitude":51.357269,"address":"تهران، خیابان هاشمی، خیابان بیابانی، کوچه محمدی پلاک 3","zoom":14};
+
+	function initMap() {
+		var myOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
+			zoom: window.mapData.zoom,
+			maxZoom: window.mapData.zoom,
+			minZoom: window.mapData.zoom,
+			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+		var marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+		});
+
+		google.maps.event.addDomListener(window, 'resize', function() {
+			map.setCenter(myOptions.center);
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQDcPFn0ihBIb5S-I9pCfZXllkr5HWIU4&amp;callback=initMap"></script>
 
 
 		<footer>
