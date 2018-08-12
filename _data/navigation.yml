@@ -1,0 +1,10 @@
+- name: خدمات
+  link: /services/
+- name: نمونه
+  link: /examples/
+- name: درباره
+  link: /about/
+- name: همراهان
+  link: /customers/
+- name: تماس
+  link: /contact/
